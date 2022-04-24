@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <div id="loader"></div>
+    <div id="loader" style="position:fixed;width:100%;height:100%;background-color:#181817;z-index:10000;background-image:url(assets/images/nloading4.gif);background-repeat:no-repeat;background-position:center"></div>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -709,11 +709,9 @@
     <script src="assets/js/custom.js"></script>
     <script>
       //PageLoading
-      loadingdata='<div style="position:fixed;width:100%;height:100%;background-color:#181817;z-index:10000;background-image:url(assets/images/nloading1.gif);background-repeat:no-repeat;background-position:center"></div>';
-      $('body div#loader').prepend(loadingdata);
       $(document).ready(function(){
         setTimeout(function() {
-            //$('body div#loader').empty();
+            $('body div#loader').attr('style','');
         }, 100);
       })
       //according to loftblog tut
