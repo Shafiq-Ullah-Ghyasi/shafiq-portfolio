@@ -32,6 +32,25 @@
         background-image: url('assets/images/nloading1.gif');
         z-index: 100000;
       }
+      .contactme img{
+        min-width: 100px;
+        max-width: 120px;
+      }
+      .contactme span{
+        display: inline-block;
+        padding-top: 5px;
+        color: #888;
+      }
+      .contactme:hover img{
+        transform: scale(1.2) rotate(-45deg); 
+        box-shadow: 2px 3px 10px white;
+        border-radius: 90px;
+        transition: 0.70s;
+      }
+      .contactme:hover span{
+        padding-top: 15px;
+        transition: 0.70s;
+      }
     </style>
   </head>
 
@@ -642,69 +661,40 @@
             >
           </div>
           <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post" enctype="multipart/form-data" name="EmailForm">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
+              <div class="col-md-8 offset-md-2" style="margin-bottom:30px">
+                 <table border="0" align="">
+                   <tr>
+                      <th style="color:grey;min-width:90px;" valign="top">Email</th> 
+                      <td valign="top">
+                        shafiqullah.ghyasi@gmail.com
+                        <br>
+                        janzebk7@gmail.com
+                      </td>
+                    </tr>
+                    <tr>
+                      <th style="color:grey;min-width:90px;" valign="top">Phone</th>
+                      <td valign="top">+93 (76) 5319514</td>
+                   </tr>
+                 </table>
               </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-sm-3 col-md-2 offset-md-2 contactme">
+                <div><a href="https://www.facebook.com/shafiqullah78" target="_blank"><img src="assets/images/fb-img.png" /></a></div>
+                <div><span>Facebook</span></div>
             </div>
+            <div class="col-sm-3 col-md-2 contactme">
+                <div><a href="https://twitter.com/janzebk7" target="_blank"><img src="assets/images/tw-img.png" /></a></div>
+                <div><span>Twitter</span></div>
+            </div>
+            <div class="col-sm-3 col-md-2 contactme">
+                <div><a href="https://www.linkedin.com/in/shafiq-ullah-ghyasi-a53aab22b/" target="_blank"><img src="assets/images/in-img.png" /></a></div>
+                <div><span>LinkedIn</span></div>
+            </div>
+            <div class="col-sm-3 col-md-2 contactme">
+                <div><a href="https://www.instagram.com/shafiqullah.ghyasi/" target="_blank"><img src="assets/images/ins-img.png" /></a></div>
+                <div><span>Instagram</span></div>
+            </div> 
           </div>
         </div>
       </section>
