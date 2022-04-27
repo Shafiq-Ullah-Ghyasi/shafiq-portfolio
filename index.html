@@ -29,6 +29,10 @@
         background-repeat: no-repeat;
         background-position: center;
         z-index: 100000;
+        padding: 20px;
+        font-weight: bold;
+        text-shadow: 0px 1px white;
+        font-size: 22px;
       }
       .contactme img{
         min-width: 100px;
@@ -53,7 +57,7 @@
   </head>
 
   <body>
-    <div id="loader"></div>
+    <div id="loader">Please wait...</div>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -727,7 +731,7 @@
       $('body div#loader').css({'background-color':loaders[theRandomNumber][0],'background-image':loaders[theRandomNumber][1]});
       //-----------
       jQuery(window).load(function () {
-        $('body div#loader').hide();
+        $('body div#loader').empty().hide();
       })
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
