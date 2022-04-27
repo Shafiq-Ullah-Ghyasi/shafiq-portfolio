@@ -26,10 +26,8 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: #181817;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url('assets/images/nloading1.gif');
         z-index: 100000;
       }
       .contactme img{
@@ -711,6 +709,23 @@
     <script src="assets/js/custom.js"></script>
     <script>
       //PageLoading
+      loaders=[];
+      loaders[0]=['black','url(assets/images/nloading1.gif)'];
+      loaders[1]=['#221f37','url(assets/images/nloading2.gif)'];
+      loaders[2]=['#fff8f2','url(assets/images/nloading3.gif)'];
+      loaders[3]=['#f8ce46','url(assets/images/nloading4.gif)'];
+      loaders[4]=['#f8b54d','url(assets/images/nloading5.gif)'];
+      loaders[5]=['#ff9933','url(assets/images/nloading6.gif)'];
+      loaders[6]=['#db3f26','url(assets/images/nloading7.gif)'];
+      loaders[7]=['#baaac2','url(assets/images/nloading8.gif)'];
+      loaders[8]=['#ffbe00','url(assets/images/nloading9.gif)'];
+      loaders[9]=['#ffffff','url(assets/images/nloading10.gif)'];
+      loaders[10]=['#fffff','url(assets/images/nloading11.gif)'];
+      loaders[11]=['#e56813','url(assets/images/nloading12.gif)'];
+      Math.random();
+      var theRandomNumber = Math.floor(Math.random() * 10) + 1;
+      $('body div#loader').css({'background-color':loaders[theRandomNumber][0],'background-image':loaders[theRandomNumber][1]});
+      //-----------
       jQuery(window).load(function () {
         $('body div#loader').hide();
       })
