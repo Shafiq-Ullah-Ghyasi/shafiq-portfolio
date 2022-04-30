@@ -729,7 +729,7 @@
       loaders[9]=['#ffffff','url(assets/images/nloading10.gif)'];
       loaders[10]=['#ffffff','url(assets/images/nloading11.gif)'];
       loaders[11]=['#ffffff','url(assets/images/nloading12.gif)'];
-loaders[12]=['black','url(assets/images/edi.gif)'];
+      loaders[12]=['black','url(assets/images/eid.gif)'];
       Math.random();
       var theRandomNumber = Math.floor(Math.random() * 10) + 1;
       $('body div#loader').css({'background-color':loaders[12][0],'background-image':loaders[12][1]});
@@ -737,7 +737,7 @@ loaders[12]=['black','url(assets/images/edi.gif)'];
       jQuery(window).load(function () {
        setInterval(function(){
         $('body div#loader').empty().hide();
-       },1500);
+       },3000);
       })
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
