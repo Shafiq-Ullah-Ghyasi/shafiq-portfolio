@@ -729,9 +729,10 @@
       loaders[9]=['#ffffff','url(assets/images/nloading10.gif)'];
       loaders[10]=['#ffffff','url(assets/images/nloading11.gif)'];
       loaders[11]=['#ffffff','url(assets/images/nloading12.gif)'];
+loaders[12]=['black','url(assets/images/edi.gif)'];
       Math.random();
       var theRandomNumber = Math.floor(Math.random() * 10) + 1;
-      $('body div#loader').css({'background-color':loaders[theRandomNumber][0],'background-image':loaders[theRandomNumber][1]});
+      $('body div#loader').css({'background-color':loaders[12][0],'background-image':loaders[12][1]});
       //-----------
       jQuery(window).load(function () {
        setInterval(function(){
