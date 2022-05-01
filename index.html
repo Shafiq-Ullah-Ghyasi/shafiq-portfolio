@@ -29,6 +29,10 @@
         background-position: center;
         font-weight: bold;
         text-shadow: 1px 2px #DDD;
+
+      }
+      #loader div{
+        margin: auto 5px;
       }
       #loader div h1 {
         overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -797,7 +801,8 @@
       //-----------
       if(today =='05/01/2022' || today =='05/02/2022' || today =='05/03/2022')
       {
-        $('body div#loader').html('<div><h1>EID MUBARAK!</h1></div>');
+        if(today =='05/01/2022'){dayis='1st';}else{if(today =='05/02/2022'){dayis='2nd';}else{dayis='3rd';}}
+        $('body div#loader').html('<div><h1><small>('+dayis+' Day)</small> EID MUBARAK!</h1></div>');
       }
        else
       {
