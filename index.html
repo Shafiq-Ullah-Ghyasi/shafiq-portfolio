@@ -2,20 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="This is shafiq ullah ghyasi portfolio" />
     <meta name="author" content="Shafiq Ullah Ghyasi" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
     <title>Shafiq Ullah Ghyasi</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
@@ -24,18 +17,39 @@
     <style type="text/css">
       #loader{
         position: fixed;
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
         z-index: 100000;
         padding: 20px;
+        background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+        background: rgba(204, 204, 204, 0.9);
+        background-repeat: no-repeat;
+        background-position: center;
         font-weight: bold;
-        text-shadow: 0px 1px white;
-        font-size: 22px;
+        text-shadow: 1px 2px #DDD;
+      }
+      #loader div h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid red; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: red; }
       }
       .contactme{
-        margin-top:20px;
+        margin-top: 10px;
       }
       .contactme img{
         min-width: 100px;
@@ -47,10 +61,11 @@
         color: #888;
       }
       .contactme:hover img{
-        transform: scale(1.2) rotate(-45deg); 
+        transform: scale(1.1) rotate(-45deg); 
         box-shadow: 2px 3px 10px white;
         border-radius: 90px;
         transition: 0.70s;
+        z-index: 1000;
       }
       .contactme:hover span{
         padding-top: 15px;
@@ -58,9 +73,8 @@
       }
     </style>
   </head>
-
   <body>
-    <div id="loader">Please wait...</div>
+    <div id="loader">Shafiq Ullah Ghyasi Portfolio<br>Please wait...</div>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -116,7 +130,7 @@
             <h2>About Me</h2>
             <div class="line-dec"></div>
             <p align="justify">
-              My name is Shafiq Ullah Ghyasi. I did Bachelor of Computer Science from Kahan-e-Noor University in department of Software Engineering. from 5th semester of university i started work with Elitech Software Development as Intern. my Intership Duration was for 6 months. but due to my pasion and capability from 3rd month i worked there as a freelancer for a University Project. After that they hired me as a full time Software developer in company. I worked there almost 3 years in Web Development & Designing.
+              My name is Shafiq Ullah Ghyasi. I did Bachelor of Computer Science from Kahan-e-Noor University department of Information Technology.<br>From 5th semester of university i started work with Elitech Software Development as intern my intership duration was for 6 months but due to my passion and capability from 3<sup>rd</sup> month i worked there as a freelancer for a University Project. after that they hired me as a full time web developer & designer in company.
             </p>
           </div>
 
@@ -125,6 +139,27 @@
           </div>
 
           <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Inventory Management System + POS</h4>
+                  <p>
+                    Inventory management system was build for Shoe Shop. But the system have capability to work for Shoe Shops, Pharamcy, Cloths & Undergarments Shops, Accessories Shop, Utility Store, Library etc. The IMS have the functionality of POS as well.
+                  </p>
+                  <div class="white-button" style="display:none">
+                    <a href="#">Visit Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/projects/ucs.png" alt="Inventory Management System + POS" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-image-post">
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
@@ -145,26 +180,8 @@
             </div>
           </div>
 
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Inventory Management System + POS</h4>
-                  <p>
-                    Inventory management system was build for Shoe Shop. But the system have capability to work for Shoe Shops, Pharamcy, Cloths & Undergarments Shops, Accessories Shop, Utility Store, Library etc. The IMS have the functionality of POS as well.
-                  </p>
-                  <div class="white-button" style="display:none">
-                    <a href="#">Visit Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/projects/ucs.png" alt="Inventory Management System + POS" />
-                </div>
-              </div>
-            </div>
-          </div>
+          
+
         </div>
       </section>
 
@@ -297,16 +314,14 @@
                     data-type="*"
                     name="isotope-filter"
                   />
-                  <span>all</span></label
-                >
+                  <span>all</span></label>
                 <label
                   ><input
                     type="radio"
                     data-type="cms"
                     name="isotope-filter"
                   />
-                  <span>CMS</span></label
-                >
+                  <span>CMS</span></label>
                 <label
                   ><input
                     type="radio"
@@ -314,16 +329,21 @@
                     checked=""
                     name="isotope-filter"
                   />
-                  <span>Website</span></label
-                >
+                  <span>Website</span></label>
                 <label
                   ><input
                     type="radio"
                     data-type="cms_website"
                     name="isotope-filter"
                   />
-                  <span>CMS & Website</span></label
-                >
+                  <span>CMS & Website</span></label>
+                  <label
+                  ><input
+                    type="radio"
+                    data-type="apps"
+                    name="isotope-filter"
+                  />
+                  <span>Apps</span></label>
               </form>
 
               <div class="isotope-box">
@@ -650,6 +670,44 @@
                   </figure>
                 </div>
 
+                <div class="isotope-item" data-type="apps">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/projects/bmc.png"
+                      alt="Bmc"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/projects/bmc.png"
+                        data-lightbox="image-1"
+                        data-title="Business Modal Canvas"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>BMC</h4>
+                      <span>Business Modal Canvas Developed & Designed in Intership time.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="apps">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/projects/smrm.png"
+                      alt="SMRM"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/projects/smrm.png"
+                        data-lightbox="image-1"
+                        data-title="Shafiq Mysql Report Maker"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>SMRM</h4>
+                      <span>Shafiq Mysql Report Maker</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
 
               </div>
             </div>
@@ -709,7 +767,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -717,27 +774,41 @@
     <script>
       //PageLoading
       loaders=[];
-      loaders[0]=['black','url(assets/images/nloading1.gif)'];
-      loaders[1]=['#221f37','url(assets/images/nloading2.gif)'];
-      loaders[2]=['#fff8f2','url(assets/images/nloading3.gif)'];
-      loaders[3]=['#f8ce46','url(assets/images/nloading4.gif)'];
-      loaders[4]=['#f8b54d','url(assets/images/nloading5.gif)'];
-      loaders[5]=['#ff9933','url(assets/images/nloading6.gif)'];
-      loaders[6]=['#db3f26','url(assets/images/nloading7.gif)'];
-      loaders[7]=['#baaac2','url(assets/images/nloading8.gif)'];
-      loaders[8]=['#ffbe00','url(assets/images/nloading9.gif)'];
-      loaders[9]=['#ffffff','url(assets/images/nloading10.gif)'];
-      loaders[10]=['#ffffff','url(assets/images/nloading11.gif)'];
-      loaders[11]=['#ffffff','url(assets/images/nloading12.gif)'];
-      loaders[12]=['black','url(assets/images/eid.gif)'];
+      loaders[0]  =['black','url(assets/images/nloading1.gif)'];
+      loaders[1]  =['#221f37','url(assets/images/nloading2.gif)'];
+      loaders[2]  =['#fff8f2','url(assets/images/nloading3.gif)'];
+      loaders[3]  =['#f8ce46','url(assets/images/nloading4.gif)'];
+      loaders[4]  =['#f8b54d','url(assets/images/nloading5.gif)'];
+      loaders[5]  =['#ff9933','url(assets/images/nloading6.gif)'];
+      loaders[6]  =['#db3f26','url(assets/images/nloading7.gif)'];
+      loaders[7]  =['#baaac2','url(assets/images/nloading8.gif)'];
+      loaders[8]  =['#ffbe00','url(assets/images/nloading9.gif)'];
+      loaders[9]  =['white','url(assets/images/nloading10.gif)'];
+      loaders[10] =['white','url(assets/images/nloading11.gif)'];
+      loaders[11] =['white','url(assets/images/nloading12.gif)'];
       Math.random();
       var theRandomNumber = Math.floor(Math.random() * 10) + 1;
-      $('body div#loader').css({'background-color':loaders[12][0],'background-image':loaders[12][1]});
+      //----------
+      var today = new Date();
+      var dd    = String(today.getDate()).padStart(2, '0');
+      var mm    = String(today.getMonth() + 1).padStart(2, '0');
+      var yyyy  = today.getFullYear();
+      today     = mm + '/' + dd + '/' + yyyy;
+      //-----------
+      if(today =='05/01/2022' || today =='05/02/2022' || today =='05/03/2022')
+      {
+        $('body div#loader').html('<div><h1>EID MUBARAK!</h1></div>');
+      }
+       else
+      {
+        $('body div#loader').css({'background-color':loaders[theRandomNumber][0],'background-image':loaders[theRandomNumber][1]});
+      }
       //-----------
       jQuery(window).load(function () {
-       setInterval(function(){
-        $('body div#loader').empty().hide();
-       },3000);
+        setInterval(function(){
+          $('body div#loader').hide().empty();  
+        },4000)
+        
       })
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
